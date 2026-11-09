@@ -81,7 +81,7 @@ def get_lecture_summary(lecture: int) -> str:
 
 # 第3回講義の演習において追加
 def make_quiz(lecture: int) -> str:
-    """指定した回の用語から1つを選び、確認問題と答えを返す。
+    """指定した回の用語から1つを選び、確認問題とそのヒント，そして答えを返す。
     「第2回の確認問題を出して」のように、復習用の問題を求められたときに使う。
     """
     terms = [term for term in load_glossary() if term["lecture"] == lecture]
